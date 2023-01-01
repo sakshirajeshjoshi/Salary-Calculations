@@ -1,0 +1,40 @@
+import java.util.*;
+public class Salary {
+	public static void main(String[] args) {
+		
+		Scanner s= new Scanner(System.in);
+		System.out.println("Enter Salary :- ");
+		int salary = s.nextInt();
+		float tax = 1;
+		int taxRate;
+		double hra = 0.15*salary;
+		double da = 0.6*salary;
+		double basicSalary;
+		
+		basicSalary = salary+hra+da-tax;
+		
+		if(salary <= 500000 )
+		{
+
+			tax = (float)(salary * 0.20);
+			System.out.println("basic salary is :"+basicSalary);
+			
+		}
+		else if(salary>=500000 && salary <= 1000000)
+		{
+			
+			tax = (float)(salary * 0.20);
+			System.out.println("basic salary is :"+basicSalary);
+		}
+		else if(salary>1000000 )
+		{
+			
+			tax = (float)(salary * 0.20);
+			System.out.println("basic salary is :"+basicSalary);
+		}
+		
+		
+	
+	}
+
+}
